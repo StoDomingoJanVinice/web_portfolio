@@ -9,7 +9,7 @@
 }
 
 body{
-    background-color: #e90808;
+    background-image: url("Assets/BACKGROUND.PNG");
 }
 
 /* NAVIGATION BAR */
@@ -58,14 +58,14 @@ li{
 .nav-list a:hover{
     color: #f9f6ef;
     border-top: 6px solid #ff0000;
-    border-bottom: 6px solid #4200f8;
+    border-bottom: 6px solid #353131;
     animation-delay: 3s;
     border-radius: 5px;
     cursor: pointer;
 }
 
 .nav-list a{
-    color: #ca1a1a;
+    color: #ff0000;
     text-decoration-line: none;
     padding: 2px;
     border-radius: 4px;
@@ -125,25 +125,23 @@ li{
     color: #030202;
 }
 
-.typewriter{
+
+
+.words {
     position: relative;
-}
+    animation: move-words 10s linear 2;
+    margin: 0;
+  }
 
-.typewriter::after{
-    content: '|';
-    position: absolute;
-    right: 0;
-    color:#fcfcfc;
-    width: 100%;
-    background-color: #ff0000;
-    animation: typing 2.5s steps(30) alternate infinite;
-}
-
-@keyframes typing{
-    to{
-        width: 0;
+  @keyframes move-words {
+    0% {
+      left: 100%;
     }
-}
+    100% {
+      left: -100%;
+    }
+  }
+
 
 /* SECTION 1 (ABOUT) */
 #section-about{
